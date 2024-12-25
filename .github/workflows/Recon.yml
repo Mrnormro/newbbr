@@ -20,7 +20,7 @@ jobs:
 
       - name: Get all domains
         run: |
-          curl -s "https://gist.githubusercontent.com/Mrnormro/d169c18f08bb995a8bb1b4a867e28e08/raw/bb1fd9bc19342bb218a300bc76b9c360b0ea15fd/vrltarget.txt" \
+          curl -s "https://gist.githubusercontent.com/Mrnormro/1106e260cbbc430419b4c88e9e40833a/raw/68b17caf9603826c790a4bdc574b61cef38f75b5/tegeet.txt" \
           | assetfinder -subs-only \
           | httprobe -c 50 -t 3000 \
           | sed 's/https\?:\/\///g; s/www\.//g; s/http\?:\/\///g' \
